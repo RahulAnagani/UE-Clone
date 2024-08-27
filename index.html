@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
         }
         header{
-            margin: 20px;
+            margin: 10dp;
         }
         nav{
             display:flex;
@@ -24,12 +24,15 @@
             align-items: center;
         }
         li{
+            display: flex;
+            align-items: center;
             font-weight: 500;
             padding: 15px;
+
             list-style: none;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        nav img,li:hover{
+        img,nav img,li:hover{
             cursor: pointer;
         }
         li:hover{
@@ -40,6 +43,7 @@
             margin-top: 100px;
         }
         .heading{
+            text-align: center;
             width: 100dvw;
             display: flex;
             justify-content: center;
@@ -99,7 +103,6 @@
             color: blue;
         }
         .lang{
-
             width: 65dvw;
             margin:auto;
             display: grid;
@@ -107,6 +110,7 @@
             grid-template-rows: repeat(4,1fr);
             gap: 20px;
             height: 120dvh;
+            padding: 20px
         }
         .card{
             display: grid;
@@ -161,19 +165,55 @@
             width:17dvw;
             height: 10dvh;
         }
-        
+        @media screen and (max-width:1145px) {
+            .lang{
+                width: 65dvw;
+                margin:auto;
+                display: grid;
+                gap: 20px;
+                height: 120dvh;
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
+            
             <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" width="170px">
             <ul>
-                <li><span>Products </span><span><img src="ra.svg" width="10px"></span></li>
-                <li><span>For business </span><span><img src="ra.svg" width="10px"></span></li>
-                <li><span>Resources </span><span><img src="ra.svg" width="10px"></span></li>
-                <li><span>Support </span><span><img src="ra.svg" width="10px"></span></li>
-                <li id="pspk"><span>Our Company </span><span><img src="ra.svg" width="10px"></span></li>
+                <li><span>Products</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.crg/2000/svg">
+                    <path
+                        d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                        stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span></li>
+                <li><span>For business</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.crg/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></li>
+                <li><span>Resources</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.crg/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></li>
+                <li><span>Support</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.crg/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></li>
+                <li id="pspk"><span>Our Company</span><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.crg/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></li>
                 <img src="https://seeklogo.com/images/G/google-translate-logo-66F8665D22-seeklogo.com.png" width="20px" height="20px">
             </ul>
         </nav>
