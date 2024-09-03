@@ -24,11 +24,11 @@
             align-items: center;
         }
         li{
+            gap:10px;
             display: flex;
             align-items: center;
             font-weight: 500;
             padding: 15px;
-
             list-style: none;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -110,12 +110,11 @@
             grid-template-rows: repeat(4,1fr);
             gap: 20px;
             height: 120dvh;
-            padding: 20px
         }
         .card{
             display: grid;
             justify-content: space-;
-            background-color: #f9f9f9;
+            background-color: #ececec;
             width:17dvw;
             border-radius: 10px;
             align-items: center;
@@ -168,15 +167,64 @@
             width:17dvw;
             height: 10dvh;
         }
-        @media screen and (max-width:1145px) {
+        .downloads{
+            width: 100%;
+            height: 200vh;
+        }
+        @media screen and (max-width:705px) {
+                nav{
+                    overflow: scroll;
+                }
+            .heading{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .des{
+                padding: 0;
+                width: 80%;
+            }
             .lang{
-                width: 65dvw;
-                margin:auto;
+                width: 100% !important;
                 display: grid;
                 gap: 20px;
                 height: 120dvh;
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
                 justify-items: center;
+                align-items: center;
+            }
+            .card{
+                width: 40dvw;
+            }
+            .card .down button{
+                font-size: x-small;
+                width: 20dvw;
+            }
+            .but button{
+                width: 100%; 
+            }
+        }
+        @media screen and (max-width:1145px) {
+            nav{
+                overflow: scroll;
+            }
+            .heading{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .des{
+                padding: 0;
+                width: 90%;
+            }
+            .lang{
+                align-items: center;
+                width: 100%;
+
+                display: grid;
+                gap: 20px;
+                height: 120dvh;
+                grid-template-columns: 1fr 1fr;
             }
             .card{
                 width: 40dvw;
@@ -231,8 +279,12 @@
     <main>
         <div class="cont">
             <div class="heading">
+                <div>
                 <span>Download <b>UltraEdit</b> for Windows</span>
+                </div>
+                <div>
                 <img class="down" src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png">
+                </div>
             </div>
             <div class="des">
                 <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
@@ -252,13 +304,14 @@
             </div>
             <div class="lang">
                 <div class="card">
-                    <h3>English</h3>
+                    <div class="l">
+                    <h3>English</h3> 
+                    </div>
                     <div class="down">
-                    <button ><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1blulr8*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA..">Download 64-bit</a></button>
+                        <button ><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1blulr8*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA..">Download 64-bit</a></button>
                     <p class="code">SHA256
                         7452CAC2CC9353BD68CF431EF780CD335EC6B7FC0BD1825936462B85F068FAE2</p>
                     </div>
-
                 </div>
                 <div class="card">
                     <div class="l">
